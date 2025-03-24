@@ -1,0 +1,39 @@
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <div class="favorite">
+            <button mat-fab aria-label="Example icon button with a heart icon" style="display: flex;position: absolute;" (click)="addFavorite()">
+                <mat-icon>favorite</mat-icon>
+            </button>
+            <img src="{{result().image}}" alt="">
+        </div>
+        <h3>Origin</h3>
+        <mat-list>
+            <mat-list-item>{{result().origin}}</mat-list-item>
+        </mat-list>
+        <h3>Residents in the place of origin: </h3>
+        <mat-list>
+            @for (item of result().characterOrigin; track item) {
+                <mat-list-item>{{item}}</mat-list-item>
+            }
+        </mat-list>
+        <h3>Location</h3>
+        <mat-list>
+            <mat-list-item>{{result().location}}</mat-list-item>
+        </mat-list>
+        <h3>Residents at current location: </h3>
+        <mat-list>
+            @for (item of result().characterLocation; track item) {
+                <mat-list-item>{{item}}</mat-list-item>
+            }
+        </mat-list>
+        <h3>Episodes: </h3>
+        <mat-list>
+            @for (item of result().episodes; track item) {
+                <mat-list-item>{{item}}</mat-list-item>
+            }
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+
+

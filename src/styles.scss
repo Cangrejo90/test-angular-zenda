@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.table-container{
+    width: 60%;
+}
+
+.filter-container{
+    margin: 1%;
+    width: 59%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.pagination-container{
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.character-container{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-character-container{
+    width: 39%;
+}
+
+.favorite{
+    justify-content: flex-start;
+    display: flex;
+}
+
+.toolbar-favorite{
+    display: flex;
+    justify-content: space-between;
+}
